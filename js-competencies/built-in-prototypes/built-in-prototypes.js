@@ -11,7 +11,10 @@
   
   //Code here
 
-
+function dragonMapper(array){
+  var newArray = array.map(x => x + '...here be dragons')
+  return newArray
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -21,7 +24,10 @@
 //cookieLoversOnly should return the filtered array.
   
   //Code here
-
+function cookieLoversOnly(array){
+  let newArray = array.filter(x => x = x.favoriteCookie)
+  return newArray
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,7 +41,9 @@
 
 
   //Code here
-
+function changeValue(array, callback){
+  array.forEach(callback)
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -47,7 +55,10 @@
 //Return the product.
   
   //Code here
-
+function findProduct(array){
+  var product = array.reduce((x,y) => x * y)
+  return product
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -64,7 +75,11 @@
 // cipherize will return: "d"
 
   //Code here
-
+function cipherize(array, string){
+  var wordSpecific = array.indexOf(string)
+  var letterSpecific = string.charAt(wordSpecific)
+  return letterSpecific
+}
 
 
 //////////////////PROBLEM 6////////////////////
@@ -75,3 +90,10 @@
 //apart, reversing it, and putting it back together again.
 
   //Code here
+
+  function reverseMe(string){
+    var splitString = string.split('')
+    var reversed = splitString.reverse()
+    var final = reversed.join('')
+    return final
+  }
